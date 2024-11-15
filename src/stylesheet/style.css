@@ -1,0 +1,127 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  body {
+    --nav-height: 100px;
+    padding-top: var(--nav-height);
+  } 
+  :root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+    --spacing: 250px;
+  
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-style: compact;
+  
+    overflow-x: hidden;
+  }
+
+  
+  main {
+    width: 100vw;
+    color: rgb(0, 0, 0);
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 140px 0px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  
+  h1, h2, h3, blockquote {
+    font-family: -apple-system, BlinkMacSystemFont;
+    font-weight: 700;
+    font-style: compact;
+  }
+  
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
+  header {
+    margin-top: 0;
+    grid-column: 2 / span 6;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 20%;
+  }
+  
+  section {
+    grid-column: 2 / 7;
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+  
+  .electronics {
+    width: 90%; /* Make the container wider */
+    margin: 0 auto; /* Center it on the screen */
+    grid-column: 2 / 8;
+  }
+  blockquote {
+    margin: 0;
+      padding: 0;
+      grid-column: 2 / span 9;
+      margin-bottom: var(--spacing);
+    }
+  
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+    }
+  
+    .left {
+      grid-column: 6 / 12;
+    }
+  
+  
+  .nav{
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100% ;
+    height: var(--nav-height);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: #FCB615;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+    margin: auto;
+  
+  }
+  .nav__link {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 1em;
+    
+  }
+  .nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+  }
+  li{
+  list-style: none; 
+  display: inline;
+  
+  }
+  html {
+    scroll-behavior: smooth;
+  }

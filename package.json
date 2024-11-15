@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.12"
+    "astro": "^4.16.12",
+    "highlight": "^0.2.4",
+    "highlight.js": "^11.10.0",
+    "three": "^0.170.0"
   }
 }

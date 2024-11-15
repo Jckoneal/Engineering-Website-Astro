@@ -1,0 +1,32 @@
+---
+
+---
+    <body>
+        <nav class="nav">
+            <u1>
+                <li><a href = "/index/#h" class="nav__link" >Home</a></li>
+                <li><a href = "/CAD" class="nav__link">CAD</a></li>
+                <li><a href = "/electronics" class="nav__link">Electronics</a></li>
+                <li><a href = "/coding" class="nav__link">Coding</a></li>
+                <!-- <li><a href = "#" class="nav__link">Projects</a></li> -->
+                <li><a href = "about.html" class="nav__link">About</a></li>
+            </u1>
+        </nav> 
+      <script>
+        // NavBar Hiding
+		  {
+			const nav = document.querySelector(".nav")
+			let lastScrollY = window.scrollY;
+	
+			  window.addEventListener("scroll", () => {
+				if (lastScrollY < window.scrollY) {
+				  nav.classList.add("nav--hidden");
+				}
+				else {
+				  nav.classList.remove("nav--hidden");
+				}
+				lastScrollY = window.scrollY
+			  });
+		  }
+		</script></window.scrollY>  
+    </body>
