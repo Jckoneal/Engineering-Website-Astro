@@ -64,7 +64,7 @@ let loadedBike;
 let loadedSkateboard;
 
 loader.load(
-  '/src/assets/Skateboard/Skateboard.glb',
+  '/assets/Skateboard/Skateboard.glb',
   function (gltf) {
     
     loadedSkateboard = gltf
@@ -88,7 +88,7 @@ loader.load(
 let loadedWheel;
 
 loader.load(
-  '/src/assets/Wheel.glb',
+  '/assets/Wheel.glb',
   function (gltf) {
     
     loadedWheel = gltf
@@ -111,7 +111,7 @@ loader.load(
 let loadedTrucks;
 
 loader1.load(
-  '/src/assets/Trucks.glb',
+  '/assets/Trucks.glb',
   function (gltf) {
     
     loadedTrucks = gltf
@@ -176,7 +176,7 @@ function addNearStar() {
 // const controls = new OrbitControls(camera, renderer.domElement);
 // scene.add(controls)
 
-const Screenshot1 = new THREE.TextureLoader().load('/src/assets/CADScreenshot1.jpg')
+const Screenshot1 = new THREE.TextureLoader().load('/assets/CADScreenshot1.jpg')
 
 const CADScreenshot1 = new THREE.Mesh(
   new THREE.BoxGeometry(8,6,0.1),
@@ -189,22 +189,22 @@ const textureLoader = new THREE.TextureLoader
 
 const jackTexture = [
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load("/src/assets/Jack5.png"), 
+    map: textureLoader.load("/assets/Jack5.png"), 
   }),
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load("/src/assets/Jack2.png"), 
+    map: textureLoader.load("/assets/Jack2.png"), 
   }),
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load("/src/assets/Jack6.JPG"), 
+    map: textureLoader.load("/assets/Jack6.JPG"), 
   }),
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load("/src/assets/Jack4.png"), 
+    map: textureLoader.load("/assets/Jack4.png"), 
   }),
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load("/src/assets/Jack.jpg"), 
+    map: textureLoader.load("/assets/Jack.jpg"), 
   }),
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load("/src/assets/Jack3.png"), 
+    map: textureLoader.load("/assets/Jack3.png"), 
   }),
 ];
 
@@ -216,8 +216,8 @@ jack.position.x = 2.5;
 jack.position.y = 0; 
 jack.position.z = 0;
 
-const moonTexture = new THREE.TextureLoader().load('/src/assets/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/src/assets/normal.jpg')
+const moonTexture = new THREE.TextureLoader().load('/assets/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('/assets/normal.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32), 
